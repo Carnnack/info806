@@ -25,7 +25,7 @@ public class VaisseauPostIT extends RestAssuredTest {
                 .contentType("application/json; charset=UTF-8")
                 .body(vaisseau)
                 .when()
-                .post("/liste/!")
+                .post("/liste/Vaisseau")
                 .then()
                 .statusCode(SC_OK);
     }
@@ -37,7 +37,7 @@ public class VaisseauPostIT extends RestAssuredTest {
                 .contentType("application/json; charset=UTF-8")
                 .body(new Vaisseau(0,"Ritchie","Blackmore",100,1000,10000))
                 .when()
-                .post("/liste/vaisseau")
+                .post("/liste/Vaisseau")
                 .then()
                 .statusCode(SC_OK);
     }

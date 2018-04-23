@@ -11,25 +11,27 @@ public class ClanServiceUnitTest {
         assertThat(clan.selectById(1).getId() == 1).isEqualTo(true);
     }
 
+    /*
     @Test
     public void should_create_On_clanService(){
         ClanService clan = new ClanService();
         clan.create("testName","testLocalisation",0);
         assertThat(clan.selectById(3).getName().equals("testName")).isEqualTo(true);
     }
-
+*/
     @Test
     public void should_delete_On_clanService(){
         ClanService clan = new ClanService();
         clan.delete(2);
         assertThat(clan.selectById(2) == null).isEqualTo(true);
     }
-
+/*
     @Test
     public void should_modifie_On_clanService(){
         ClanService clan = new ClanService();
         clan.modifie(1,0);
         assertThat(clan.selectById(1).getFound() == 0).isEqualTo(true);
     }
+    */
 }
 

@@ -45,7 +45,7 @@ public class ClanController {
         clanService.delete(clanId);
     }
 
-    @RequestMapping(value = "/liste/Clan/{id}", method = PUT, produces = "application/json;charset=UTF-8")
+    @RequestMapping(value = "/liste/Clans/{id}", method = PUT, produces = "application/json;charset=UTF-8")
     public Clan modifieVaisseau(@PathVariable String id, double found ){
         int vaisseauId = parseInt(id);
         clanService.modifie(vaisseauId, found);

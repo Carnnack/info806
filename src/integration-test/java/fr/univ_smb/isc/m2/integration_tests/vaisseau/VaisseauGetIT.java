@@ -14,7 +14,7 @@ public class VaisseauGetIT extends RestAssuredTest {
         given()
                 .pathParam("vaisseauId", 1)
                 .when()
-                .get("/liste/vaisseau/{vaisseauId}")
+                .get("/liste/Vaisseau/{vaisseauId}")
                 .then()
                 .statusCode(SC_OK);
     }
@@ -25,7 +25,7 @@ public class VaisseauGetIT extends RestAssuredTest {
         given()
                 .pathParam("vaisseauId", 1024)
                 .when()
-                .get("/liste/vaisseau/{vaisseauId}")
+                .get("/liste/Vaisseau/{vaisseauId}")
                 .then()
                 .statusCode(SC_NOT_FOUND);
     }
